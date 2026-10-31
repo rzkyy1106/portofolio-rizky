@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moh Alif Farizky | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0a192f',
+                        gold: '#d4af37',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light text-slate-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-navy hover:text-gold transition-colors">MAF.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="text-slate-600 hover:text-navy hover:font-semibold transition-all">About</a>
+                        <a href="#experience" class="text-slate-600 hover:text-navy hover:font-semibold transition-all">Experience</a>
+                        <a href="#skills" class="text-slate-600 hover:text-navy hover:font-semibold transition-all">Skills</a>
+                        <a href="#contact" class="bg-navy text-gold px-4 py-2 rounded-md font-semibold hover:bg-opacity-90 transition-all">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-24 pb-12">
+        <div class="max-w-6xl mx-auto px-4 w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <!-- Teks Hero -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <p class="text-gold font-semibold tracking-wide uppercase mb-3">Hello, I am</p>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-navy mb-6">Moh Alif Farizky</h1>
+                <p class="text-xl md:text-2xl text-slate-600 mb-10">Electrical Engineering Student & Aspiring Power System Engineer</p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#experience" class="bg-navy text-gold border border-navy px-8 py-3 rounded-full font-semibold hover:bg-gold hover:text-navy hover:border-gold transition-all duration-300 shadow-lg">View My Work</a>
+                    <a href="#contact" class="bg-transparent text-navy border border-navy px-8 py-3 rounded-full font-semibold hover:bg-navy hover:text-light transition-all duration-300">Get In Touch</a>
+                </div>
+            </div>
+            
+            <!-- Foto Profil Hero -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <!-- Lingkaran Hiasan -->
+                    <div class="absolute inset-0 rounded-full border-4 border-gold/30 scale-105"></div>
+                    <div class="absolute inset-0 rounded-full border-4 border-gold scale-100 translate-x-3 translate-y-3"></div>
+                    
+                    <!-- FOTO ANDA (Ganti URL di bagian src di bawah ini dengan direct link/file lokal Anda) -->
+                    <img 
+                        src="https://i.ibb.co.com/placeholder-image.jpg" 
+                        alt="Foto Formal Moh Alif Farizky" 
+                        class="relative w-full h-full object-cover rounded-full shadow-2xl z-10"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Alif+Farizky&size=512&background=0a192f&color=d4af37'"
+                    >
+                    <!-- Catatan: Script onerror di atas hanya untuk menampilkan inisial jika link gambar error -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center md:text-left border-l-4 border-gold pl-4">
+                <h2 class="text-3xl font-bold text-navy">About Me</h2>
+            </div>
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <!-- Tentang Saya Teks -->
+                <div class="w-full md:w-2/3 bg-slate-50 rounded-2xl p-8 shadow-sm border border-slate-100 text-lg text-slate-600 leading-relaxed">
+                    <p>
+                        Highly motivated first-year Electrical Engineering student at Universitas Ibn Khaldun Bogor with a strong foundation in science and demonstrated leadership experience. Transitioning into the power and energy sector, aiming to leverage administrative, communication, and organizational skills developed through 9 months of teaching and operational coordination. Eager to apply academic knowledge in electrical systems, energy, and industrial technology to a Power System Engineer role while contributing to team success and operational efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-light">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center md:text-left border-l-4 border-gold pl-4">
+                <h2 class="text-3xl font-bold text-navy">Professional Experience</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-navy group">
+                    <h3 class="text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">Homeroom & Subject Teacher</h3>
+                    <p class="text-gold font-semibold text-sm mb-4">MI Plus Fahmil Qur'an | Oct 2025 – Jul 2026</p>
+                    <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+                        <li>Managed classroom administration and learning activities for 3rd-grade students, maintaining consistent educational delivery over 9 months.</li>
+                        <li>Facilitated clear communication between the school and parents, improving community engagement.</li>
+                        <li>Coached the school's futsal team, developing teamwork, physical fitness, and discipline among student-athletes.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-navy group">
+                    <h3 class="text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">Administrative Staff</h3>
+                    <p class="text-gold font-semibold text-sm mb-4">MI Plus Fahmil Qur'an | Jul 2025 – Oct 2026</p>
+                    <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+                        <li>Streamlined document management systems, ensuring accurate institutional records by organizing files.</li>
+                        <li>Supported daily academic operations and executed school administration tasks efficiently.</li>
+                        <li>Collaborated closely with cross-functional administrative colleagues and faculty.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-navy group">
+                    <h3 class="text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">Guest Reception Coordinator</h3>
+                    <p class="text-gold font-semibold text-sm mb-4">Daaruttaqwa Integrated Boarding School</p>
+                    <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+                        <li>Directed guest reception operations within the boarding school, ensuring a welcoming environment and high visitor satisfaction.</li>
+                        <li>Applied professional hospitality etiquette for all visiting guests.</li>
+                        <li>Handled inquiries and facility tours effectively, prioritizing excellent public relations.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center md:text-left border-l-4 border-gold pl-4">
+                <h2 class="text-3xl font-bold text-navy">My Skills</h2>
+            </div>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Hard Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Academic Research</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">APA Formatting</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Document Administration</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Educational Evaluation Instruments</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Basic Electrical Engineering</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-100 text-navy border border-slate-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-200 transition-colors">Cross-functional Communication</span>
+                        <span class="bg-slate-100 text-navy border border-slate-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-200 transition-colors">Team Collaboration</span>
+                        <span class="bg-slate-100 text-navy border border-slate-200 px-4 py-2 rounded-full text-sm
