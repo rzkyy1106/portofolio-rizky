@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moh Alif Farizky | Portfolio</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,98 +21,74 @@
             }
         }
     </script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Custom scrollbar for webkit */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #0a192f; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #d4af37; 
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-light text-slate-800 font-sans antialiased selection:bg-gold selection:text-navy">
+<body class="bg-light text-slate-800 font-sans antialiased">
 
     <!-- Navigation -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <a href="#home" class="text-3xl font-bold text-navy tracking-tighter hover:text-gold transition-colors">MAF<span class="text-gold">.</span></a>
+                    <a href="#home" class="text-2xl font-bold text-navy hover:text-gold transition-colors">MAF.</a>
                 </div>
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-navy hover:scale-105 transition-all">About</a>
-                    <a href="#experience" class="text-sm font-medium text-slate-600 hover:text-navy hover:scale-105 transition-all">Experience</a>
-                    <a href="#skills" class="text-sm font-medium text-slate-600 hover:text-navy hover:scale-105 transition-all">Skills</a>
-                    <a href="#contact" class="bg-navy text-gold px-5 py-2.5 rounded-md text-sm font-semibold hover:bg-gold hover:text-navy shadow-md transition-all duration-300">Contact Me</a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="text-slate-600 hover:text-navy hover:font-semibold transition-all">About</a>
+                        <a href="#experience" class="text-slate-600 hover:text-navy hover:font-semibold transition-all">Experience</a>
+                        <a href="#skills" class="text-slate-600 hover:text-navy hover:font-semibold transition-all">Skills</a>
+                        <a href="#contact" class="bg-navy text-gold px-4 py-2 rounded-md font-semibold hover:bg-opacity-90 transition-all">Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-b from-white to-light">
-        <!-- Decorative Background Element -->
-        <div class="absolute top-1/4 right-0 w-96 h-96 bg-gold/10 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
-        <div class="absolute top-1/3 left-0 w-72 h-72 bg-navy/5 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
-
-        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center flex flex-col items-center">
-            <!-- Profile Picture in Hero -->
-            <div class="w-32 h-32 md:w-48 md:h-48 mb-6 rounded-full overflow-hidden border-4 border-gold shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                <img src="https://i.ibb.co.com/60psQG1y/image.jpg" alt="Moh Alif Farizky" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/0a192f/d4af37?text=MAF'">
+    <section id="home" class="min-h-screen flex items-center justify-center pt-24 pb-12">
+        <div class="max-w-6xl mx-auto px-4 w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <!-- Teks Hero -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <p class="text-gold font-semibold tracking-wide uppercase mb-3">Hello, I am</p>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-navy mb-6">Moh Alif Farizky</h1>
+                <p class="text-xl md:text-2xl text-slate-600 mb-10">Electrical Engineering Student & Aspiring Power System Engineer</p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#experience" class="bg-navy text-gold border border-navy px-8 py-3 rounded-full font-semibold hover:bg-gold hover:text-navy hover:border-gold transition-all duration-300 shadow-lg">View My Work</a>
+                    <a href="#contact" class="bg-transparent text-navy border border-navy px-8 py-3 rounded-full font-semibold hover:bg-navy hover:text-light transition-all duration-300">Get In Touch</a>
+                </div>
             </div>
             
-            <p class="text-gold font-bold tracking-widest uppercase mb-4 text-sm md:text-base">Hello, I am</p>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-navy mb-6 tracking-tight">Moh Alif Farizky</h1>
-            <p class="text-lg md:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
-                Electrical Engineering Student & Aspiring <span class="font-semibold text-navy">Power System Engineer</span>
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#experience" class="bg-navy text-gold border-2 border-navy px-8 py-3.5 rounded-full font-semibold hover:bg-gold hover:text-navy hover:border-gold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-                    View My Work
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-                </a>
-                <a href="#contact" class="bg-white text-navy border-2 border-slate-200 px-8 py-3.5 rounded-full font-semibold hover:border-navy transition-all duration-300 flex items-center justify-center">
-                    Get In Touch
-                </a>
+            <!-- Foto Profil Hero -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <!-- Lingkaran Hiasan -->
+                    <div class="absolute inset-0 rounded-full border-4 border-gold/30 scale-105"></div>
+                    <div class="absolute inset-0 rounded-full border-4 border-gold scale-100 translate-x-3 translate-y-3"></div>
+                    
+                    <!-- FOTO ANDA (Ganti URL di bagian src di bawah ini dengan direct link/file lokal Anda) -->
+                    <img 
+                        src="https://i.ibb.co.com/placeholder-image.jpg" 
+                        alt="Foto Formal Moh Alif Farizky" 
+                        class="relative w-full h-full object-cover rounded-full shadow-2xl z-10"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Alif+Farizky&size=512&background=0a192f&color=d4af37'"
+                    >
+                    <!-- Catatan: Script onerror di atas hanya untuk menampilkan inisial jika link gambar error -->
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="py-24 bg-white relative">
+    <section id="about" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/3">
-                    <div class="relative">
-                        <!-- Abstract Shape for Image Background -->
-                        <div class="w-64 h-64 md:w-80 md:h-80 bg-gold/20 rounded-3xl transform rotate-3 absolute -top-4 -left-4 z-0 border border-gold/30"></div>
-                        <div class="w-64 h-64 md:w-80 md:h-80 bg-navy rounded-3xl relative z-10 flex items-center justify-center shadow-2xl overflow-hidden border-4 border-white">
-                            <!-- User's Photo -->
-                            <img src="https://i.ibb.co.com/60psQG1y/image.jpg" alt="Moh Alif Farizky - About" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/0a192f/d4af37?text=MAF'">
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-2/3">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="h-[2px] w-12 bg-gold"></div>
-                        <h2 class="text-3xl md:text-4xl font-bold text-navy tracking-tight">About Me</h2>
-                    </div>
-                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
-                        Highly motivated first-year <span class="font-semibold text-navy">Electrical Engineering student</span> at Universitas Ibn Khaldun Bogor with a strong foundation in science and demonstrated leadership experience. 
-                    </p>
-                    <p class="text-lg text-slate-600 leading-relaxed">
-                        Transitioning into the power and energy sector, aiming to leverage administrative, communication, and organizational skills developed through 9 months of teaching and operational coordination. Eager to apply academic knowledge in electrical systems, energy, and industrial technology to a Power System Engineer role while contributing to team success and operational efficiency.
+            <div class="mb-12 text-center md:text-left border-l-4 border-gold pl-4">
+                <h2 class="text-3xl font-bold text-navy">About Me</h2>
+            </div>
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <!-- Tentang Saya Teks -->
+                <div class="w-full md:w-2/3 bg-slate-50 rounded-2xl p-8 shadow-sm border border-slate-100 text-lg text-slate-600 leading-relaxed">
+                    <p>
+                        Highly motivated first-year Electrical Engineering student at Universitas Ibn Khaldun Bogor with a strong foundation in science and demonstrated leadership experience. Transitioning into the power and energy sector, aiming to leverage administrative, communication, and organizational skills developed through 9 months of teaching and operational coordination. Eager to apply academic knowledge in electrical systems, energy, and industrial technology to a Power System Engineer role while contributing to team success and operational efficiency.
                     </p>
                 </div>
             </div>
@@ -121,71 +96,43 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-24 bg-slate-50">
+    <section id="experience" class="py-20 bg-light">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-navy tracking-tight mb-4">Professional Experience</h2>
-                <div class="h-1 w-20 bg-gold mx-auto rounded-full"></div>
+            <div class="mb-12 text-center md:text-left border-l-4 border-gold pl-4">
+                <h2 class="text-3xl font-bold text-navy">Professional Experience</h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative group overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-navy group-hover:bg-gold transition-colors duration-300"></div>
-                    <div class="mb-6">
-                        <span class="inline-block px-3 py-1 bg-slate-100 text-navy text-xs font-bold rounded-full mb-3">Oct 2025 – Jul 2026</span>
-                        <h3 class="text-xl font-bold text-navy mb-1 leading-tight">Homeroom & Subject Teacher</h3>
-                        <p class="text-gold font-medium text-sm">MI Plus Fahmil Qur'an</p>
-                    </div>
-                    <ul class="text-slate-600 text-sm space-y-3">
-                        <li class="flex items-start">
-                            <svg class="w-4 h-4 text-gold mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span>Managed classroom administration and learning activities for 3rd-grade students.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-4 h-4 text-gold mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span>Facilitated clear communication between school and parents, improving engagement.</span>
-                        </li>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-navy group">
+                    <h3 class="text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">Homeroom & Subject Teacher</h3>
+                    <p class="text-gold font-semibold text-sm mb-4">MI Plus Fahmil Qur'an | Oct 2025 – Jul 2026</p>
+                    <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+                        <li>Managed classroom administration and learning activities for 3rd-grade students, maintaining consistent educational delivery over 9 months.</li>
+                        <li>Facilitated clear communication between the school and parents, improving community engagement.</li>
+                        <li>Coached the school's futsal team, developing teamwork, physical fitness, and discipline among student-athletes.</li>
                     </ul>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative group overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-navy group-hover:bg-gold transition-colors duration-300"></div>
-                    <div class="mb-6">
-                        <span class="inline-block px-3 py-1 bg-slate-100 text-navy text-xs font-bold rounded-full mb-3">Jul 2025 – Oct 2026</span>
-                        <h3 class="text-xl font-bold text-navy mb-1 leading-tight">Administrative Staff</h3>
-                        <p class="text-gold font-medium text-sm">MI Plus Fahmil Qur'an</p>
-                    </div>
-                    <ul class="text-slate-600 text-sm space-y-3">
-                        <li class="flex items-start">
-                            <svg class="w-4 h-4 text-gold mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span>Streamlined document management systems, ensuring accurate institutional records.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-4 h-4 text-gold mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span>Executed school administration tasks collaboratively with faculty.</span>
-                        </li>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-navy group">
+                    <h3 class="text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">Administrative Staff</h3>
+                    <p class="text-gold font-semibold text-sm mb-4">MI Plus Fahmil Qur'an | Jul 2025 – Oct 2026</p>
+                    <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+                        <li>Streamlined document management systems, ensuring accurate institutional records by organizing files.</li>
+                        <li>Supported daily academic operations and executed school administration tasks efficiently.</li>
+                        <li>Collaborated closely with cross-functional administrative colleagues and faculty.</li>
                     </ul>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 relative group overflow-hidden">
-                    <div class="absolute top-0 left-0 w-full h-1 bg-navy group-hover:bg-gold transition-colors duration-300"></div>
-                    <div class="mb-6">
-                        <span class="inline-block px-3 py-1 bg-slate-100 text-navy text-xs font-bold rounded-full mb-3">Previous Role</span>
-                        <h3 class="text-xl font-bold text-navy mb-1 leading-tight">Guest Reception Coordinator</h3>
-                        <p class="text-gold font-medium text-sm">Daaruttaqwa Boarding School</p>
-                    </div>
-                    <ul class="text-slate-600 text-sm space-y-3">
-                        <li class="flex items-start">
-                            <svg class="w-4 h-4 text-gold mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span>Directed reception operations, ensuring a welcoming environment and high satisfaction.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-4 h-4 text-gold mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                            <span>Handled inquiries and facility tours effectively, prioritizing public relations.</span>
-                        </li>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-navy group">
+                    <h3 class="text-xl font-bold text-navy mb-2 group-hover:text-gold transition-colors">Guest Reception Coordinator</h3>
+                    <p class="text-gold font-semibold text-sm mb-4">Daaruttaqwa Integrated Boarding School</p>
+                    <ul class="text-slate-600 text-sm space-y-2 list-disc pl-4">
+                        <li>Directed guest reception operations within the boarding school, ensuring a welcoming environment and high visitor satisfaction.</li>
+                        <li>Applied professional hospitality etiquette for all visiting guests.</li>
+                        <li>Handled inquiries and facility tours effectively, prioritizing excellent public relations.</li>
                     </ul>
                 </div>
             </div>
@@ -193,112 +140,27 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-24 bg-white border-t border-slate-100">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-navy tracking-tight mb-4">Core Competencies</h2>
-                <div class="h-1 w-20 bg-gold mx-auto rounded-full"></div>
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center md:text-left border-l-4 border-gold pl-4">
+                <h2 class="text-3xl font-bold text-navy">My Skills</h2>
             </div>
             
-            <div class="space-y-12">
-                <!-- Hard Skills -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="p-2 bg-navy/10 rounded-lg text-navy">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-navy">Hard Skills</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="bg-navy text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md shadow-navy/20 hover:scale-105 transition-transform cursor-default border border-navy">Basic Electrical Engineering</span>
-                        <span class="bg-navy text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md shadow-navy/20 hover:scale-105 transition-transform cursor-default border border-navy">Academic Research</span>
-                        <span class="bg-navy text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md shadow-navy/20 hover:scale-105 transition-transform cursor-default border border-navy">APA Formatting</span>
-                        <span class="bg-navy text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md shadow-navy/20 hover:scale-105 transition-transform cursor-default border border-navy">Document Administration</span>
-                        <span class="bg-navy text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md shadow-navy/20 hover:scale-105 transition-transform cursor-default border border-navy">Evaluation Instruments</span>
-                    </div>
-                </div>
-
-                <!-- Soft Skills -->
+            <div class="space-y-8">
                 <div>
-                    <h3 class="text-xl font-bold text-slate-700 mb-5 flex items-center gap-2">
-                        <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                        Soft Skills
-                    </h3>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Hard Skills</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-white text-navy border-2 border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:border-gold hover:text-gold transition-colors cursor-default">Cross-functional Communication</span>
-                        <span class="bg-white text-navy border-2 border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:border-gold hover:text-gold transition-colors cursor-default">Team Collaboration</span>
-                        <span class="bg-white text-navy border-2 border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:border-gold hover:text-gold transition-colors cursor-default">Time Management</span>
-                        <span class="bg-white text-navy border-2 border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:border-gold hover:text-gold transition-colors cursor-default">Guest Service & Hospitality</span>
-                        <span class="bg-white text-navy border-2 border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:border-gold hover:text-gold transition-colors cursor-default">Adaptability</span>
-                        <span class="bg-white text-navy border-2 border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:border-gold hover:text-gold transition-colors cursor-default">Continuous Learning</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Academic Research</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">APA Formatting</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Document Administration</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Educational Evaluation Instruments</span>
+                        <span class="bg-navy text-gold px-4 py-2 rounded-full text-sm font-medium shadow-sm">Basic Electrical Engineering</span>
                     </div>
                 </div>
 
-                <!-- Languages -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-700 mb-5 flex items-center gap-2">
-                        <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
-                        Languages
-                    </h3>
-                    <div class="flex flex-wrap gap-4">
-                        <div class="flex items-center gap-2 bg-gold/10 text-yellow-800 px-5 py-2.5 rounded-xl border border-gold/20">
-                            <span class="font-bold">Indonesian</span>
-                            <span class="text-xs bg-white/50 px-2 py-1 rounded-md text-yellow-900">Native</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-gold/10 text-yellow-800 px-5 py-2.5 rounded-xl border border-gold/20">
-                            <span class="font-bold">English</span>
-                            <span class="text-xs bg-white/50 px-2 py-1 rounded-md text-yellow-900">IELTS Certified</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-gold/10 text-yellow-800 px-5 py-2.5 rounded-xl border border-gold/20">
-                            <span class="font-bold">Arabic</span>
-                            <span class="text-xs bg-white/50 px-2 py-1 rounded-md text-yellow-900">Conversational</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Contact Section -->
-    <footer id="contact" class="bg-navy pt-24 pb-12 text-light relative overflow-hidden">
-        <!-- Background accents -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-gold opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
-        
-        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-white tracking-tight">Let's <span class="text-gold">Connect</span></h2>
-            <p class="text-slate-400 mb-12 max-w-2xl mx-auto text-lg">Currently open to new opportunities, collaborations, and discussions regarding electrical engineering and energy systems. My inbox is always open.</p>
-            
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-16">
-                <!-- Email -->
-                <a href="mailto:forzayapina123@gmail.com" class="group flex flex-col items-center gap-3 bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-gold hover:bg-white/10 transition-all w-full sm:w-auto min-w-[200px]">
-                    <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <span class="text-slate-300 group-hover:text-white font-medium text-sm">forzayapina123@gmail.com</span>
-                </a>
-                
-                <!-- Phone -->
-                <a href="tel:08568939923" class="group flex flex-col items-center gap-3 bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-gold hover:bg-white/10 transition-all w-full sm:w-auto min-w-[200px]">
-                    <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                    </div>
-                    <span class="text-slate-300 group-hover:text-white font-medium text-sm">0856 8939 923</span>
-                </a>
-                
-                <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/moh-alif-farizky-0751b7425" target="_blank" class="group flex flex-col items-center gap-3 bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-gold hover:bg-white/10 transition-all w-full sm:w-auto min-w-[200px]">
-                    <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </div>
-                    <span class="text-slate-300 group-hover:text-white font-medium text-sm">LinkedIn Profile</span>
-                </a>
-            </div>
-            
-            <div class="border-t border-white/10 pt-8 mt-8 flex flex-col items-center">
-                <p class="text-sm text-slate-500 font-medium tracking-wide">&copy; 2026 Moh Alif Farizky. Designed & Built with Tailwind CSS.</p>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-100 text-navy border border-slate-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-200 transition-colors">Cross-functional Communication</span>
+                        <span class="bg-slate-100 text-navy border border-slate-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-200 transition-colors">Team Collaboration</span>
+                        <span class="bg-slate-100 text-navy border border-slate-200 px-4 py-2 rounded-full text-sm
